@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(34, 147, 119);
+}
+
+body main {
+    font-family: Roboto, sans-serif;
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    background-image: url("img/bicycle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 190px;
+    border-radius: 2px;
+    border: none;
+    padding: 20px 60px 150px 60px;
+    -webkit-box-shadow: -6px 6px 5px 0px rgba(13,13,13,0.14);
+    -moz-box-shadow: -6px 6px 5px 0px rgba(13,13,13,0.14);
+    box-shadow: -6px 6px 5px 0px rgba(13,13,13,0.14);
+}
+
+body main div.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body main div.header img {
+    padding: 6px;
+    border: solid 1px rgb(185, 181, 181);
+    border-radius: 25px;
+}
+
+body main div.header img:hover {
+    box-shadow: 0 0 0 4px rgb(230, 227, 227);;
+    
+}
+
+main p#orden {
+    color: rgb(142, 146, 146);
+    text-align: justify;
+}
+
+body main div.subtotal,
+body main div.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body main div.subtotal p.product,
+body main div.total p#total {
+    color: rgb(83, 83, 85);
+    font-size: 18px;
+}
+
+body main div.total {
+    text-transform: uppercase;
+}
+
+body main div.subtotal span.price,
+body main div.total span.price {
+    font-weight: bold;
+}
