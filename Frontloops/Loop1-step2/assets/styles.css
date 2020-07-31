@@ -1,0 +1,90 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+}
+
+form h3 {
+    padding-top: 20px;
+    color: rgb(24, 23, 23);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form .radio {
+    height: 50px;
+    border-top: solid 1px rgb(238, 232, 232) ;
+    display: flex;
+    flex-direction: row;
+}
+
+form .radio:hover {
+    background: rgb(236, 236, 236);
+}
+
+form .radio input[type="radio"] {
+    display: none;
+}
+
+form .radio input[type="radio"]:checked 
++ label {
+    color: rgb(24, 23, 23);
+}
+
+form .radio input[type="radio"]:checked 
++ label img.check {
+    display: inline;
+}
+
+form .radio label {
+    width: 100%;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #808080;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+form .radio label img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+form .radio label img.check {
+    width: 20px;
+    position: absolute;
+    left: 240px;
+    display:none;
+}
+
+form button {
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(65, 97, 204);
+    border: none;
+}
+
+form button:hover {
+    background-color: rgb(94, 121, 212);
+}
+
+form button:focus {
+    margin-top: 3px;
+}
