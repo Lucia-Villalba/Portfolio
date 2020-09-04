@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #4d515d;
+}
+body .wrapper {
+  max-width: 1050px;
+  margin: 50px auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px 2px rgba(0, 0, 0, 0.3);
+  background-image: url("../img/side.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+body .wrapper .container {
+  max-width: 650px;
+  border-radius: 4px 0 0 4px;
+  background-color: #ffffff;
+}
+body .wrapper .container .main {
+  padding: 70px 60px;
+}
+body .wrapper .container .main .header {
+  margin-bottom: 55px;
+}
+body .wrapper .container .main .header .title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+body .wrapper .container .main .header p {
+  color: #b3b3b3;
+  font-size: 13px;
+  margin: 0;
+}
+body .wrapper .container .main .social-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+body .wrapper .container .main .social-links a {
+  text-decoration: none;
+  color: #949392;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border: 1px solid #eef0f3;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 20px center;
+}
+body .wrapper .container .main .social-links a:hover {
+  color: #0f0f0f;
+  border: 1px solid transparent;
+  box-shadow: 0 7px 12px 1px rgba(0, 0, 0, 0.3);
+}
+body .wrapper .container .main .social-links .google {
+  background-image: url("../img/googleplus.svg");
+}
+body .wrapper .container .main .social-links .facebook {
+  background-image: url("../img/facebook.svg");
+}
+body .wrapper .container .main .social-links .twitter {
+  background-image: url("../img/twitter.svg");
+}
+body .wrapper .container .email {
+  border-top: 1px solid #eef0f3;
+  padding: 30px 60px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .wrapper .container .email p {
+  font-size: 13px;
+  color: #0f0f0f;
+  font-weight: bold;
+}
+body .wrapper .container .email a {
+  text-decoration: none;
+  color: #949392;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+body .wrapper .container .email a:hover {
+  color: #0f0f0f;
+}
