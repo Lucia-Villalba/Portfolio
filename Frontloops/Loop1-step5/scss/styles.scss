@@ -1,0 +1,136 @@
+$color1: #3b8acf;
+$color2: #c7c4c2;
+$color3: #383e43;
+$color4: #ffffff;
+$color-: #d3e6f4;
+$color-name-city: #bec1c4;
+@mixin city-name-short {
+    color: $color1;
+    text-transform: uppercase;
+    font-family: 'Prompt', sans-serif;
+    font-size: 50px;
+    margin-bottom: -12px;
+}
+@mixin city-name-full {
+    color: $color-name-city;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+@mixin label {
+    color: $color2;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+@mixin value {
+    color: $color3;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: $color4;
+        margin-top: 100px;
+        border-radius: 4px;
+        padding: 50px 0 20px 0;
+
+        .cities {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 320px;
+            margin: 0 auto;
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 27px;
+                height: 5px;
+                background-color: $color-;
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 45%;
+            }
+            
+            .city-from {
+                .city-name-short {
+                  @include city-name-short();
+                }
+                .city-name-full {
+                   @include city-name-full()
+                }
+            }
+
+            .city-to {
+                text-align: right;
+            
+                .city-name-short {
+                    @include city-name-short();
+                }
+                .city-name-full {
+                    @include city-name-full()
+                 }
+            }
+        }
+
+        .ticket-details-1 {
+            max-width: 400px;
+            padding: 60px 100px 20px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .ticket-info {
+
+                .label {
+                    @include label();
+                }
+
+                .value {
+                    @include value();
+                }
+            }
+        }
+
+        .ticket-details-2 {
+            max-width: 400px;
+            padding: 0 40px 0 40px;
+            position: relative;
+        
+
+            .ticket-info {
+                max-width: 150px;
+                .label {
+                    @include label();
+                }
+
+                .value {
+                    @include value();
+                    text-transform: capitalize;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .qr {
+                position: absolute;
+                right: 40px;
+                top: 0;
+                img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}

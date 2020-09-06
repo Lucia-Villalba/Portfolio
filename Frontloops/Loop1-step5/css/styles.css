@@ -1,0 +1,110 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+body .container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 100px;
+  border-radius: 4px;
+  padding: 50px 0 20px 0;
+}
+body .container .cities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+body .container .cities:after {
+  content: "";
+  width: 27px;
+  height: 5px;
+  background-color: #d3e6f4;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 45%;
+}
+body .container .cities .city-from .city-name-short {
+  color: #3b8acf;
+  text-transform: uppercase;
+  font-family: "Prompt", sans-serif;
+  font-size: 50px;
+  margin-bottom: -12px;
+}
+body .container .cities .city-from .city-name-full {
+  color: #bec1c4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+body .container .cities .city-to {
+  text-align: right;
+}
+body .container .cities .city-to .city-name-short {
+  color: #3b8acf;
+  text-transform: uppercase;
+  font-family: "Prompt", sans-serif;
+  font-size: 50px;
+  margin-bottom: -12px;
+}
+body .container .cities .city-to .city-name-full {
+  color: #bec1c4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+body .container .ticket-details-1 {
+  max-width: 400px;
+  padding: 60px 100px 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .container .ticket-details-1 .ticket-info .label {
+  color: #c7c4c2;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+body .container .ticket-details-1 .ticket-info .value {
+  color: #383e43;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+}
+body .container .ticket-details-2 {
+  max-width: 400px;
+  padding: 0 40px 0 40px;
+  position: relative;
+}
+body .container .ticket-details-2 .ticket-info {
+  max-width: 150px;
+}
+body .container .ticket-details-2 .ticket-info .label {
+  color: #c7c4c2;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+body .container .ticket-details-2 .ticket-info .value {
+  color: #383e43;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+body .container .ticket-details-2 .qr {
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+body .container .ticket-details-2 .qr img {
+  max-width: 150px;
+}
