@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario con validación de JS</title>
+</head>
+
+<body>
+    <main>
+        <form action="" class="form" id="form">
+            <!-- USER -->
+            <div class="form__group" id="group__user">
+                <label for="user" class="form__label">Usuario</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="user" id="user" placeholder="CosmeFulanito">
+                    <i class="form__validation-status fas fa-times-circle"></i>        
+                </div>
+                <p class="form__input-error">El usuario debe tener de 4 a 16 caracteres y solo puede contener
+                    números, letras y guion bajo.</p>
+            </div>
+
+            <!-- NAME -->
+            <div class="form__group" id="goup__name">
+                <label for="name" class="form__label">Nombre</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Cosme">
+                    <i class="form__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">El nombre debe tener de 3 a 16 caracteres y solo puede contener letras.
+                </p>
+            </div>
+
+
+            <!-- PASS -->
+            <div class="form__group" id="goup__password">
+                <label for="password" class="form__label">Contraseña</label>
+                <div class="form__group-input">
+                    <input type="password" class="form__input" name="password" id="password">
+                    <i class="form__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">La contraseña debe tener de 6 a 12 caracteres.</p>
+            </div>
+
+            <!-- REPEAT PASS -->
+            <div class="form__group" id="goup__password2">
+                <label for="password2" class="form__label">Repetir Contraseña</label>
+                <div class="form__group-input">
+                    <input type="password2" class="form__input" name="password2" id="password2">
+                    <i class="form__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">ambas contraseñas deben coincidir.</p>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form__group" id="goup__email">
+                <label for="email" class="form__label">Correo Electrónico</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="email" id="email" placeholder="Cosme@correo.com">
+                    <i class="form__validation-status fas fa-times-circle"></i>   
+                </div>
+                <p class="form__input-error">El correo solo puede contener letras, números, puntos y guión bajo.
+                    </p>
+            </div>
+
+            <!-- PHONE -->
+            <div class="form__group" id="goup__phone">
+                <label for="phone" class="form__label">Teléfono</label>
+                <div class="form__group-input">
+                    <input type="email" class="form__input" name="phone" id="phone" placeholder="3814223434">
+                    <i class="form__validation-status fas fa-times-circle"></i>  
+                </div> 
+                <p class="form__input-error">El teléfono sólo debe contener números y un máximo de 14 dígitos.
+                    </p>
+            </div>
+
+             <!-- TERMS AND CONDITIONS -->
+            <div class="form__group-terms" id="group__terms">
+                <label class="form__label">
+                    <input class="form__checkbox" type="checkbox" name="terms" id="terms">
+                    Acepto los Términos y Condiciones
+                </label>
+            </div>
+
+            <div class="form__message" id="form__message">
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <b>Error:</b>
+                    Por favor complete el formulario correctamente.
+                </p>
+            </div>
+
+            <div class="form__group form__group-btn-send">
+                <button type="submit" class="form__btn">Enviar</button>
+                <p class="form__message-success" id="form__message-success">
+                    <i class="fas fa-check-circle"></i>
+                    El formulario fue enviado con éxito.</p>
+            </div>
+            
+        </form>
+    </main>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

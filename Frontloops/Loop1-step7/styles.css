@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2ce97;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 80px auto;
+    background-color: #484956;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.5);
+}
+
+.fix:before,
+.fix:after {
+    display: table;
+    content: '';
+}
+
+.fix:after {
+    clear: both;
+}
+
+.post-title-box {
+    color: #fff;
+    max-width: 40%;
+    padding: 60px 40px 30px;
+    float: left;
+}
+
+.post-title {
+    margin-top: 0;
+    position: relative;
+    font-size: 1.9rem;
+}
+
+.post-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width: 60px;
+    height: 3px;
+    background-color: #e37b62;
+}
+
+.post-subtitle {
+    font-weight: 300;
+}
+
+.post-author-box {
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+}
+
+.post-author-avatar {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.post-author-box span {
+    font-size: 1.1rem;
+}
+
+.post-content {
+    position: relative;
+    max-width: 60%;
+    padding: 60px 40px 35px;
+    float: right;
+    background-color: #fff;
+}
+
+.post-text {
+    margin-bottom: 80px;
+}
+
+.post-text p {
+    margin-top: 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.post-text p:first-child:first-letter {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.post-info {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding: 35px 40px;
+    background-color: #fff;
+    box-shadow: 0 -7px 10px -3px rgba(0,0,0,0.2);
+}
+
+.post-info-left {
+    float: left;
+}
+
+.post-info-right {
+    float: right;
+}
+
+.post-info-link {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.post-info-link:first-child {
+    margin-right: 20px;
+}
+
+.post-info-link:first-child img {
+    margin-right: 9px;
+}
