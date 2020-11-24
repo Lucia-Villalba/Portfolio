@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #9f9ca1 0%, rgb(39, 3, 39) 100%);
 }
 
 main {
@@ -12,7 +13,7 @@ main {
     margin-top: 30px;
     padding: 40px;
     border-radius: 20px;
-    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
 .form {
@@ -20,8 +21,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
-
 
 .form__label {
     display: block;
@@ -122,8 +121,8 @@ main {
 }
 
 .form__message-success {
-    font-size: 14px;
-    color: #168508;
+    font-size: 18px;
+    color: #1bc204;
     display: none;
 }
 
@@ -164,3 +163,11 @@ main {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
