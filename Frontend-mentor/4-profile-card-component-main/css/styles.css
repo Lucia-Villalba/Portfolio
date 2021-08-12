@@ -1,0 +1,99 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-image: 
+    url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -90% 140%, 190% -60%;
+    background-color: hsl(185, 75%, 39%);
+}
+
+main {
+    width: 350px;
+    margin: 100px auto;
+    padding-top: 85px;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.profile {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .avatar {
+    width: 100px;
+    border-radius: 50%;
+    border: solid 4px white;
+    display: block;
+}
+
+.profile .user-name{
+    padding: 20px 0 17px 0;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile .age {
+    margin-left: 10px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.profile .city {
+    padding-bottom: 25px;
+    color: hsl(227, 10%, 46%);
+}
+
+hr {
+    border-color: transparent;
+    border: 1px solid hsl(0, 5%, 88%);
+}
+
+.statistics {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 45px 25px 45px;
+}
+
+.statistics h3 {
+    color: hsl(229, 23%, 23%);
+}
+
+.statistics div p {
+    color: hsl(227, 10%, 46%);
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+@media (max-width:375px) {
+    body {
+        background-position: 160% 140%, -30% -90%;
+    }
+
+    main,
+    .statistics,
+    .profile {
+        width: 325px;
+    }  
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(229, 38%, 91%);
+}

@@ -1,0 +1,107 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 920px;
+    margin: 60px auto;
+    border-radius: 8px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+
+.card {
+    padding: 50px;
+}
+
+.card h2 {
+    padding: 40px 0 40px 0;
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.card p {
+    margin-block: 0;
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+.card a {
+    text-decoration: none;
+    display: block;
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.card a:active {
+    color:red;
+}
+
+#sedan a {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv a {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+#sedan a:active,
+#suv a:active,
+#luxury a:active {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width:375px) {
+    main {
+        width: 330px;
+        flex-direction: column;
+    }
+
+    #sedan {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

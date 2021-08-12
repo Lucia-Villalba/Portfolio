@@ -1,0 +1,134 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    max-width: 450px;
+    margin: 90px auto 90px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.illustration {
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.order-summary {
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+.order-summary h1 {
+    padding: 45px 0 20px 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.order-summary p {
+    padding-bottom: 20px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price {
+    height: 100px;
+    position: relative;
+    margin: 0 50px 30px 50px;
+    padding: 25px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+.price img {
+    position: absolute;
+}
+
+.price .plan {
+    position: absolute;
+    left: 100px;
+}
+
+
+.plan :first-child {
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan :last-child {
+    color: hsl(224, 23%, 55%);
+}
+
+.price a {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    color: hsl(245, 75%, 52%);
+}
+
+.price a:hover {
+    text-decoration: none;
+    color: hsl(245, 66%, 63%);
+}
+
+.buttons {
+    margin: 0 50px 0px 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttons :first-child {
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 20px 15px 0 hsl(225, 100%, 94%);
+}
+
+.buttons :first-child:hover {
+    background-color: hsl(245, 66%, 63%);
+}
+
+.buttons :last-child {
+    display: block;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.buttons :last-child:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+
+    .container {
+        width: 330px;
+        margin: 60px auto 60px auto;
+    }
+}
