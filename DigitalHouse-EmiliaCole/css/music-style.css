@@ -1,0 +1,126 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    text-transform: uppercase;
+    background-image: url(../img/emilia-music-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 40px 10px;
+}
+
+.nav ul {
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(252, 252, 252, 0.596);
+}
+
+.nav li {
+    list-style: none;
+    border-left: 2px solid rgb(17, 17, 17);
+    padding: 0 10px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+li:last-of-type {
+    border-right: 2px solid rgb(17, 17, 17)
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav a {
+    color: rgb(17, 17, 17);
+}
+
+.icons {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.icons a box-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.music {
+    padding-left: 10px;
+}
+
+.music h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 45px 0 45px 0;
+}
+
+.nav-music {
+    font-weight: 600;
+}
+
+.nav-music ul {
+    margin: 20px 0 65px 0
+}
+
+.nav-music li {
+    list-style: none;
+    border: none;
+}
+
+.nav-music a {
+    color: rgb(116, 114, 114);
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 65px 0 20px 0;
+}
+
+.album img {
+    width: 660px;
+}
+
+.album ol {
+    list-style-type: decimal-leading-zero;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    margin-bottom: 20px;
+}
+
+.album li {
+    margin-top: 13px;
+    border: none;
+}
+
+.go-top {
+    text-transform: capitalize;
+    color: rgb(146, 146, 146);
+    font-weight: 600;
+}
+
+.video iframe {
+    width: 660px;
+    height: 370px;
+    margin-bottom: 15px;  
+}
+
+.video .info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}

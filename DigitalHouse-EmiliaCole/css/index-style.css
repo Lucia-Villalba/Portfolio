@@ -6,11 +6,12 @@
 main {
     max-width: 1440px;
     height: 100vh;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     text-transform: uppercase;
     background-image: url(../img/emilia-home.jpg);
     background-repeat: no-repeat;
     background-position: top right;
+    background-position: 360px 0;
     background-size: auto 100vh;
     padding: 20px 0 60px 40px;
     display: flex;
