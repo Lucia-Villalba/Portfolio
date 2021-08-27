@@ -1,0 +1,121 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(68, 68, 68);
+    background-image: url(../img/bg-2.png);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; 
+    display: flex;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    max-width: 800px;
+    padding: 10px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
+    grid-gap: 20px 10px;
+    background-color: white;
+}
+
+.product-name {
+    margin: 15px 0;
+}
+
+.product img {
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button {
+    background-color: rgb(223, 88, 55);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(223, 88, 55);
+    border: 1px solid rgb(223, 88, 55);
+    transition: background-color .3s;
+}
+
+.aside {
+    max-width: 320px;
+}
+
+.tutorials {
+    margin-bottom: 20px;
+}
+
+.tutorial:last-child {
+    border-bottom: 1px solid rgb(180, 215, 228);
+}
+
+.tutorials-title {
+    background-color: white;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid rgb(180, 215, 228);
+}
+
+.tutorial {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid rgb(180, 215, 228);
+    border-bottom: none;
+    color: rgb(68, 68, 68);
+}
+
+.tutorial:hover {
+    background-color: rgb(255, 224, 204);
+    transition: background-color .3s;
+}
+
+
+.tutorial img {
+    margin-right: 10px;
+}
+
+.advertising-title {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid rgb(180, 215, 228);
+}
+
+.advertising-images {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid rgb(180, 215, 228);
+}
+
+.advertising img {
+    width: 300px;
+}

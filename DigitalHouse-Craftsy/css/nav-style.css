@@ -1,0 +1,44 @@
+.nav {
+    max-width: 1140px;
+    margin: 0 auto; 
+    height: 60px;
+    background-color: rgb(223, 88, 55);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-grow: 10;
+    padding: 0 10px 0 10px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(255, 224, 204);
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);
+    transition: .3s;
+
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.log-reg {
+    display: flex;
+}

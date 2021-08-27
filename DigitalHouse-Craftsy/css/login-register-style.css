@@ -1,0 +1,100 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(68, 68, 68);
+    background-image: url(../img/bg-2.png);
+}
+
+.container {
+}
+
+.form {
+    width: 350px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+input[type="text"],
+[type="email"],
+[type="password"]
+{
+    width: 100%;
+    height: 30px;
+    margin: 8px 0 0 0;
+}
+
+.check-login {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.check-login label {
+    display: inline;
+}
+
+input[type="checkbox"] {
+    
+}
+
+.message-error {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+
+label.country,
+label.gender,
+label.hobbies,
+label.message {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.check-terms {
+    margin-top: 15px;
+}
+
+.check-terms label {
+    display: inline;
+}
+
+input.button {
+    background-color: rgb(79, 140, 184);
+    color: white;
+    width: 110px;
+    height: 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+input.button:hover {
+    background-color: white;
+    color: rgb(79, 140, 184);
+    border: 1px solid rgb(79, 140, 184);
+    transition: .3s;
+}
