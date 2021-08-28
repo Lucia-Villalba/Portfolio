@@ -1,0 +1,120 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    /* margin: 0 auto; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 150px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 540px;
+    margin: 80px auto 60px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+
+h2:first-of-type {
+    font-weight: 200;
+}
+
+.header p {
+    margin-top: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-center {
+    margin: 0 30px;
+}
+
+.card {
+    width: 350px;
+    border-radius: 7px;
+    box-shadow: 1px 9px 30px 1px hsl(228, 57%, 91%);
+    padding: 30px;
+}
+
+.card h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+.card p {
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.img-card {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.card-1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card-2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-bottom: 30px;
+}
+
+.card-3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-4 {
+    border-top: 4px solid hsl(212, 86%, 64%)
+}
+
+footer {
+    margin-top: 60px;
+}
+
+@media (max-width:500px) {
+
+    .container {
+        width: 375px;
+        padding: 0;
+    }
+
+    .header {
+        width: 350px;
+        margin: 80px auto 60px auto;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards-center {
+        margin: 0;
+    }
+
+    .card-2 {
+        margin: 0;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
