@@ -1,0 +1,160 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1285px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 60px 0 80px 0;
+}
+
+.header img{
+    width: 205px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content {
+    width: 515px;
+    margin: 45px 0 0 55px;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+.content p {
+    line-height: 28px;
+    color: hsl(0, 58%, 94%);
+    margin-bottom: 25px;
+}
+
+.content .button {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: hsl(257, 40%, 49%);
+    background-color: hsl(0, 0%, 100%);
+    width: 200px;
+    display: inline-block;
+    padding: 17px 0;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px 6px hsl(257, 41%, 40%);
+}
+
+.content .button:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.footer i {
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 21px;
+    padding: 8px;
+}
+
+.footer i:hover {
+    color: hsl(321, 99%, 66%);
+    border: 1px solid hsl(321, 99%, 66%);
+}
+
+.footer .bxl-twitter {
+    margin: 0 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin: 60px 0 10px 0;
+}
+
+.attribution a {
+    color: hsl(204, 69%, 71%);
+}
+
+@media (max-width:375px) {
+    
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-image: none;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .container {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin: 35px 0 50px 0;
+    }
+
+    .header img {
+        width: 140px;
+    }
+
+    .main {
+        width: 330px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .illustration img{
+        display: inline-block;
+        width: 330px;
+    }
+
+    .content {
+        margin: 60px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content h1 {
+
+        font-size: 24px;
+    }
+    .content .button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .footer {
+        margin-top: 80px;
+        text-align: center;
+    }
+}
