@@ -1,0 +1,133 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main {
+    width: 1115px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: 'test-1 test-1 test-2 test-5'
+                         'test-3 test-4 test-4 test-5';
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.testimonial {
+    padding: 25px 30px 30px 30px;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 30px 1px hsl(0, 0%, 81%);
+}
+
+.testimonial .verified-graduate {
+    color: hsl(212, 21%, 86%);
+}
+
+
+.testimonial .cite {
+    color: hsla(0, 0%, 100%, 0.70);
+    line-height: 18px;
+}
+
+.testimonial h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.testimonial-3 .verified-graduate,
+.testimonial-5 .verified-graduate {
+    color: hsla(217, 19%, 35%, 0.50);
+}
+
+.testimonial-3 .cite,
+.testimonial-5 .cite {
+    color: hsla(217, 19%, 35%, 0.70);
+}
+
+.testimonial-1 {
+    grid-area: test-1;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+
+.testimonial-2 {
+    grid-area: test-2;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.testimonial-3 {
+    grid-area: test-3;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial-4 {
+    grid-area: test-4;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial-5 {
+    grid-area: test-5;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-1 img {
+    border: 2px solid hsla(0, 0%, 100%, 0.50);
+}
+
+.testimonial-4 img {
+    border: 2px solid rgb(101, 71, 145);
+}
+
+.user {
+    margin-left: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 100px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    .main {
+        width: 330px;
+        margin-top: 70px;
+        grid-template-areas: 'test-1'
+                             'test-2'
+                             'test-3'
+                             'test-4'
+                             'test-5';
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-1 {
+        background-position: 90% 0;
+    }
+}
